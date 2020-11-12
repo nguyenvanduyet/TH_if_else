@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="a">x2+
+<input type="text" id="b">x+
+<input type="text" id="c">=0
+<button onclick="phuongTrinh()">Ket qua</button>
+<script>
+    function  phuongTrinh(){
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let c = document.getElementById('c').value;
+        if (a == 0) {
+            return;
+        }
+        let delta = (b * b - 4 * a * c)
+        if (delta > 0 || delta == 0) {
+            let x1 = (-b - Math.sqrt(delta)) / 2 * a
+            let x2 = (-b - Math.sqrt(delta)) / 2 * a
+            alert(' là nghiệm kết quả' + x1)
+            alert('là nghiệm kết quả' + x2)
+        } else
+            alert("pt vo nghỉem");
+        alert('phương trình không phải phải phương trình bậc 2')
+    }
+// </script>
+</body>
+</html>
